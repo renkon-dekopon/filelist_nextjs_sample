@@ -65,7 +65,7 @@ export default function Home() {
                 const url = URL.createObjectURL(file);
                 return (
                   <div key={`${url}-${index}`} className="relative">
-                    <img src={url} alt="プレビュー画像" className="w-full h-80 object-cover" />
+                    <img src={url} alt="プレビュー" className="w-full h-80 object-cover" />
                     <div onClick={() => handleRemoveFile(index)}>削除する</div>
                   </div>
                 );
